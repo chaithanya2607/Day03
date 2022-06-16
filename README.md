@@ -1,9 +1,15 @@
 # day3
 QUESTION 1 For the given JSON iterate over all for loops (for, for in, for of, forEach).
-ANSWER-->
+----
 
 QUESTION 2  Create your own resume data in JSON format.
-ANSWWR-->
+----
+var request=new XMLHttpRequest();
+request.send();
+request.onload= function(){
+var result=JSON.parse(request.response);
+console.log(result);
+}
 var resume= {
   "intro": [{
     "name": "Chaithanya Rao R",
@@ -14,7 +20,7 @@ var resume= {
       "address": "Sri Sathya pg for ladies,Karuna Nagar, Neeladri road, Electronic city phase 1",
       "postalCode": "560100",
       "city": "Bangalore",
-      "countryCode": "India",
+      "country": "India",
       "state":"Karnataka"
       }
     }],
