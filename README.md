@@ -2,7 +2,8 @@
 QUESTION 1 For the given JSON iterate over all for loops (for, for in, for of, forEach).
 ----
 # FOR LOOP
-   var students =[
+      var result= JSON.parse(request.response)
+    var students =[
         { name:"Ramesh",
           percentage:86,
           city: "Chennai"},
@@ -44,8 +45,8 @@ QUESTION 1 For the given JSON iterate over all for loops (for, for in, for of, f
           percentage:73,
           city:"Kolkata"}
     ]
-  for(var i of students){
-    console.log(i);
+    for(var i of students){
+        console.log(i);
   }
      
 # FOR EACH LOOP
@@ -60,10 +61,10 @@ QUESTION 1 For the given JSON iterate over all for loops (for, for in, for of, f
           percentage:73,
           city:"Kolkata"}
     ]
-  students.forEach(item =>{
-    console.log(item);
-  })
+      students.forEach(item =>{
+         console.log(item);
     }
+    
 QUESTION 2  Create your own resume data in JSON format.
 ----
 var request=new XMLHttpRequest();
