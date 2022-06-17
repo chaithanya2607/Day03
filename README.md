@@ -1,7 +1,69 @@
 # day3
 QUESTION 1 For the given JSON iterate over all for loops (for, for in, for of, forEach).
 ----
-
+# FOR LOOP
+   var students =[
+        { name:"Ramesh",
+          percentage:86,
+          city: "Chennai"},
+        { name:"Suresh",
+          percentage:68,
+          city:"New Delhi"},
+        { name:"Mahesh",
+          percentage:73,
+          city:"Kolkata"}
+    ]
+    for(i=0;i<students.length;i++){
+        console.log(students.name);
+    }
+# FOR IN LOOP
+    var students =[
+        { name:"Ramesh",
+          percentage:86,
+          city: "Chennai"},
+        { name:"Suresh",
+          percentage:68,
+          city:"New Delhi"},
+        { name:"Mahesh",
+          percentage:73,
+          city:"Kolkata"}
+    ]
+    for(var key in students){
+        console.log(students.name);
+    }
+# FOR OF LOOP
+    var result= JSON.parse(request.response)
+    var students =[
+        { name:"Ramesh",
+          percentage:86,
+          city: "Chennai"},
+        { name:"Suresh",
+          percentage:68,
+          city:"New Delhi"},
+        { name:"Mahesh",
+          percentage:73,
+          city:"Kolkata"}
+    ]
+  for(var i of students){
+    console.log(i);
+  }
+     
+# FOR EACH LOOP
+   var students =[
+        { name:"Ramesh",
+          percentage:86,
+          city: "Chennai"},
+        { name:"Suresh",
+          percentage:68,
+          city:"New Delhi"},
+        { name:"Mahesh",
+          percentage:73,
+          city:"Kolkata"}
+    ]
+  students.forEach(item =>{
+    console.log(item);
+  })
+    }
 QUESTION 2  Create your own resume data in JSON format.
 ----
 var request=new XMLHttpRequest();
